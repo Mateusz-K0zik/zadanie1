@@ -1,0 +1,14 @@
+oceny = input("Podaj oceny oddzielone spacjami: ")
+lista_ocen = oceny.split()
+suma = 0
+for ocena in lista_ocen:
+    suma += float(ocena)
+
+srednia = suma / len(lista_ocen)
+
+print(f"Średnia: {srednia:.2f}")
+
+if srednia >= 3.0:
+    print("Uczeń zdał.")
+else:
+    print("Uczeń nie zdał.")
