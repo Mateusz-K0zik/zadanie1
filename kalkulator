@@ -1,0 +1,18 @@
+a = float(input("podaj pierwszą liczbę: "))
+b = float(input("podaj drugą liczbę: "))
+operacja = input("wybierz operację (+, -, *, /): ")
+if operacja == "+":
+  wynik = a + b
+  print ("wynik", wynik)
+elif operacja == "-":
+  wynik = a - b
+  print ("wynik", wynik)
+elif operacja == "*":
+  wynik = a * b
+  print ("wynik", wynik)
+elif operacja == "/":
+  if b !=0:
+    wynik = a / b
+    print ("wynik", wynik)
+  else:
+    print("Błąd: nie można dzielić przez zero")
